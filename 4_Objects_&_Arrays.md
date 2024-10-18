@@ -15,10 +15,10 @@ const person = {
 
 - If you want to search for a value in an object the time complexity is "Linear". E.g to search for the value "Wayne" you might have to also search all the values in the object
 
-Insert - O(1)
-Remove - O(1)
-Access - O(1)
-Search - O(n)
+- Insert - O(1)
+- Remove - O(1)
+- Access - O(1)
+- Search - O(n)
 
 # Object methods
 
@@ -28,9 +28,9 @@ Search - O(n)
 
 - The Object.entries() which returns an array of a given object's own enumerable string-keyed property key-value pairs has a "Linear" time complexity
 
-Object.keys() - O(n)
-Object.values() - O(n)
-Object.entries() - O(n)
+- Object.keys() - O(n)
+- Object.values() - O(n)
+- Object.entries() - O(n)
 
 ## Arrays - Big-O
 
@@ -44,13 +44,14 @@ The difference when compared to objects is that arrays are ordered collection of
 
 - Searching for an element in an array has "Linear" time complexity
 
-Insert / remove at end - O(1)
-Insert / remove at beginning - O(n)
-Access - O(1)
-Search - O(n)
+- Insert / remove at end - O(1)
+- Insert / remove at beginning - O(n)
+- Access - O(1)
+- Search - O(n)
 
 # Array Methods
 
 push / pop - O(1)
-shift / unshift / concat / slice / splice - O(n)
-forEach / map / filter / reduce - O(n)
+
+- shift / unshift / concat / slice / splice - O(n)
+- forEach / map / filter / reduce - O(n)
