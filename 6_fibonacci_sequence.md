@@ -38,6 +38,6 @@ console.log(fibonacci(7)) ---> [0, 1, 1, 2, 3, 5, 8]
 
 ### The big-O of our algorithm
 
-The Big-O for our solution is n + 2
+The Big-O for our solution is n + 2 which is approximately n
 
 Big-O = O(n) --- Linear time complexity
