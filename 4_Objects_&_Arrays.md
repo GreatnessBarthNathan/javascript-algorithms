@@ -42,8 +42,15 @@ The difference when compared to objects is that arrays are ordered collection of
 
 - Accessing an element in an array has "Constant" time complexity, because fetching the first element is no different from fetching the element at position 1000
 
--
+- Searching for an element in an array has "Linear" time complexity
 
 Insert / remove at end - O(1)
 Insert / remove at beginning - O(n)
 Access - O(1)
+Search - O(n)
+
+# Array Methods
+
+push / pop - O(1)
+shift / unshift / concat / slice / splice - O(n)
+forEach / map / filter / reduce - O(n)
