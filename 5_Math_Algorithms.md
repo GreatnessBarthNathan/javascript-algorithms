@@ -1,4 +1,4 @@
-## Math Algorithms
+# Math Algorithms
 
 We will be looking at problems relating to
 
@@ -10,7 +10,7 @@ We will be looking at problems relating to
 6. Fibonacci sequence with recursion
 7. Factorial of a number with recursion
 
-# The Approach
+## The Approach
 
 - We will start with the problem statement - i.e what is asked from us
 - We are required to pause the video and try solving the problem

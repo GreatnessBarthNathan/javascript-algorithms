@@ -1,4 +1,4 @@
-## Objects - Big-O
+# Objects - Big-O
 
 An object is a collection of key value pairs
 
@@ -20,7 +20,7 @@ const person = {
 - Access - O(1)
 - Search - O(n)
 
-# Object methods
+## Object methods
 
 1. Object.keys() which returns an array of all the keys has a "Linear" time complexity
 
@@ -32,7 +32,7 @@ const person = {
 - Object.values() - O(n)
 - Object.entries() - O(n)
 
-## Arrays - Big-O
+# Arrays - Big-O
 
 The difference when compared to objects is that arrays are ordered collection of values
 
@@ -49,7 +49,7 @@ The difference when compared to objects is that arrays are ordered collection of
 - Access - O(1)
 - Search - O(n)
 
-# Array Methods
+## Array Methods
 
 - push / pop - O(1)
 - shift / unshift / concat / slice / splice - O(n)

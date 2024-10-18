@@ -18,7 +18,7 @@ But analysing algorithms(the absolute running time of an algorithm) however, can
 
 Keeping this in mind we evaluate the performance of an algorithm in terms of its input size.
 
-# Types of Evaluation
+## Types of Evaluation
 
 1. Time Complexity - Amount of time taken by an algorithm to run, as a function of input size
 
@@ -32,13 +32,13 @@ If your app needs to be very quick and has plenty of memory to work with, you do
 
 If you have very little memory to work with, you should pick a solution that is relatively slower but needs less space
 
-# How To Represent Time And Space Complexity Of An Algorithm
+## How To Represent Time And Space Complexity Of An Algorithm
 
 We represent the time and space complexity of an algorithm using "Asymptotic Notations"
 
 Asymptotic Notations are mathematical tools to represent time and space complexity
 
-# Types of Asymptotic Notations
+## Types of Asymptotic Notations
 
 1. Big-O Notation (O-notation) - For Worst case complexity
 2. Omega Notation (Ω-notation) - For Best case complexity

@@ -1,19 +1,19 @@
-## Big-O Notation
+# Big-O Notation
 
 The worst case complexity of an algorithm is represented using the Big-O notation.
 
 Big-O notation describes the complexity of an algorithm using algebraic terms
 
-# Characteristics of Big-O Notation
+## Characteristics of Big-O Notation
 
 1. It is expressed in terms of the input
 2. It focuses on the bigger picture without getting caught up in the minute details
 
-## Big-O Time complexity
+# Big-O Time complexity
 
 1. Find the sum of the first "n" natural numbers
 
-# Algorithm 1
+## Algorithm 1
 
 ```
 function summation(n) {
@@ -75,7 +75,7 @@ So the worst case time complexity which is also referred to as just "time comple
 
 O(n) - referred to as linear time complexity which means as the size of the input increases, the time complexity also increases
 
-# Algorithm 2
+## Algorithm 2
 
 ```
 
@@ -89,7 +89,7 @@ Here is another algorithm to solve the same problem. The time complexity of this
 
 O(1) - referred to as Constant time complexity. Because irrespective of what the value of "n" is, line 2 executes only once
 
-# In The case of two nested loops
+## In The case of two nested loops
 
 ```
 for (i = 1; i <= n; 1++) {
@@ -107,7 +107,7 @@ E.g If you calculate the complexity to be "3n^2 + 5n + 1", we narrow that dowwn 
 
 "100,000,000^2" is so large compared to "100,000,000 \* 5
 
-# In The case of three nested loops
+## In The case of three nested loops
 
 ```
 for (i = 1; i <= n; 1++) {
@@ -122,12 +122,12 @@ for (i = 1; i <= n; 1++) {
 The time Complexity in this case is "Cubic"
 O(n^3) - Cubic time complexity
 
-# In The Case Where the input size reduces by half every iteration
+## In The Case Where the input size reduces by half every iteration
 
 In this case the time complexity is "Logarithmic"
 O(logn) - Logarithmic time complexity
 
-## Big-O Space Complexity
+# Big-O Space Complexity
 
 1. If the algorithm does not need extra memory, or the memory needed does not depend on the input size the space complexity is "Constant"
 
@@ -145,7 +145,7 @@ O(logn) - Logarithmic space complexity
 
 Note => Although we tried to solve "quadratic time complexity", "quadratic space complexity" is something you should try to avoid
 
-## Few Points to note
+# Few Points to note
 
 - Multiple algorithms exist for the same problem and there is no one right solution. Different algorithms work well under different constraints
 

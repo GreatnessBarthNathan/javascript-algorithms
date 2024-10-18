@@ -2,7 +2,7 @@
 
 An algorithm is a set of well-defined instructions to solve a particular problem
 
-# Characteristics of an Algorithm
+## Characteristics of an Algorithm
 
 1. An algorithm should have well defined inputs and outputs(e.g Two numbers 'a' and 'b' as inputs and the sum of 'a' and 'b' as outputs)
 
@@ -10,7 +10,7 @@ An algorithm is a set of well-defined instructions to solve a particular problem
 
 3. An algorithm should be language independent. It is a sequence of instructions that can be implemented in any language
 
-# Why Algorithms?
+## Why Algorithms?
 
 1. As a developer, you're going to come across problems that you need to solve
 
