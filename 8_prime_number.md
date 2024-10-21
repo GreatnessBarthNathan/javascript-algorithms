@@ -8,7 +8,7 @@ Given a natural number "n", determine if the number is prime or not
 
 A prime number is a natural number greater than 1 that is not a product of two smaller natural numbers
 
-## Solution
+## Solution 1
 
 ```
 function isPrime (n) {
@@ -37,7 +37,7 @@ The Big-O for our solution is n + 2 which is approximately n
 
 Big-O = O(n) --- Linear time complexity
 
-## Optimized Primality Test
+## Optimized Primality Test - Solution 2
 
 The above solution is a good first solution. But there is a slightly more optimal solution:
 

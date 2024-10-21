@@ -1,15 +1,28 @@
-function isPrime(n) {
-  if (n < 2) {
+function isPowerOfTwo(n) {
+  if (n < 1) {
     return false
   }
 
-  for (let i = 2; i < n; i++) {
-    if (n % i === 0) {
+  while (n > 1) {
+    if (n % 2 !== 0) {
       return false
     }
+    n = n / 2
   }
+
   return true
 }
 
-console.log(isPrime(6))
-console.log(isPrime(7))
+function isPowerOfTwoBitwise(n) {
+  if (n < 1) {
+    return false
+  }
+
+  return (n & (n - 1)) === 0
+}
+
+console.log(isPowerOfTwoBitwise(1))
+
+console.log(isPowerOfTwoBitwise(2))
+
+console.log(isPowerOfTwoBitwise(5))
