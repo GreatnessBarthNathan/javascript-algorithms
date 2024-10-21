@@ -26,7 +26,9 @@ return sum
 ```
 
 Example
+
 summation(4) = 10
+
 1 + 2 + 3 + 4 = 10
 
 We already know that we cannot calculate the absolute running time of an algorithm, and hence that cannot be the time complexity
@@ -34,8 +36,11 @@ We already know that we cannot calculate the absolute running time of an algorit
 What we do instead is count the number of times a statement executes based on the input size
 
 Our program has three main statements to execute:
+
 line 2 --- let sum = 0
+
 line 4 --- sum += i
+
 line 6 --- return sum
 
 The for loop is just a repetition of line 4
@@ -43,28 +48,39 @@ The for loop is just a repetition of line 4
 Now, given that n = 4, let's calculate the number of times each statement is executed
 
 line 2 executes only once
+
 line 4 however executes four times i = 1 -> 1 = 4
+
 line 6 executes only once
 
 total count = 6
+
 i.e if n = 4
+
 total count = n + 2 = 4 + 2 = 6
 
 if n = 10
+
 total count = 10 + 2 = 12
 
 if n = 1,000,000
+
 total count = 1,000,000 + 2 = 1,000,002
 
 So our time complexity is dependent on our input size. This shows the first characteristics of the Big-O Notation - "It is expressed in terms of the input"
 
 n + 2
+
 n = 100 -> 100 + 2
+
 n = 1000 -> 1000 + 2
+
 n = 10000 -> 10000 + 2
+
 .
 .
 .
+
 n = 100000000 -> 100000000 + 2
 
 At the point of 100000000 the "+ 2" is insignificant and we can actually drop it, and "+ 2" can be approximated to just "n" since "n" contributes most to the total value and not the additional 2 or more extra steps
@@ -100,9 +116,11 @@ for (i = 1; i <= n; 1++) {
 ```
 
 The time Complexity in this case is "Quadratic"
+
 O(n^2) - Quadratic time complexity
 
 Once again the Big-O notation drops the less dominant terms
+
 E.g If you calculate the complexity to be "3n^2 + 5n + 1", we narrow that dowwn to just n^2 and call it quadratic
 
 "100,000,000^2" is so large compared to "100,000,000 \* 5
@@ -120,11 +138,13 @@ for (i = 1; i <= n; 1++) {
 ```
 
 The time Complexity in this case is "Cubic"
+
 O(n^3) - Cubic time complexity
 
 ## In The Case Where the input size reduces by half every iteration
 
 In this case the time complexity is "Logarithmic"
+
 O(logn) - Logarithmic time complexity
 
 # Big-O Space Complexity
