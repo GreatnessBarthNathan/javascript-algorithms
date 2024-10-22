@@ -50,3 +50,19 @@ function recursiveFactorial (n) {
 }
 
 ```
+
+console.log(recursiveFactorial(0)) --> 1
+
+console.log(recursiveFactorial(1)) --> 1
+
+console.log(recursiveFactorial(4)) --> 24
+
+console.log(recursiveFactorial(5)) --> 120
+
+### The big-O of our algorithm
+
+Going by our solution, if n is 5 the function will be executed 5 times
+
+Therefore the time complexity of our algorithm is "linear"
+
+Big-O = O(n)
