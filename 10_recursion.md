@@ -22,6 +22,8 @@ When the two professors were asked thesame questions they replied:
 
 The teachers count the students and report the number to the professors who in turn report to the principal, who then gives you the count
 
+The problem has always been "find the number of students". But in each level the problem is smaller
+
 ```
                                             Principal(200)
                                                 |
@@ -31,3 +33,13 @@ The teachers count the students and report the number to the professors who in t
 
 
 ```
+
+## A Few Points about Recursion
+
+Before we dive into solving the fibonacci and factorial problems with recursion, here are a few points to take note of:
+
+- Every recursive solution needs to have a base case - a condition to terminate the recursion. If you don't have a base case, you will have an infinite loop that will crash your program
+
+- Recursion might simplify solving a problem but it does not always translate to a faster solution. A recursive solution may be far worse compared to an iterative solution
+
+- Recursion is a topic that is not the most straight forward to understand. Do not give up if you struggle with the concept
