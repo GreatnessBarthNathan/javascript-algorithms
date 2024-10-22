@@ -56,19 +56,30 @@ The time complexity for recursive fibonacci is 2^n
 
 So recursion is not a good solution to the fibonacci sequence problem
 
-```
+### The Iterative Solution
 
+```
 function iterativeFibonacci(n) {
     let fib = [0, 1]
 
-     if(n < 1) {
+     if(n < 2) {
         return n
      }
 
-    for (let i = 2; i < n; i++) {
+    for (let i = 2; i <= n; i++) {
        fib[i] = fib[i - 1] + fib[i - 2]
     }
 
     return fib[n]
 }
 ```
+
+console.log(iterativeFibonacci(0)) --> 0
+
+console.log(iterativeFibonacci(1)) --> 1
+
+console.log(iterativeFibonacci(3)) --> 2
+
+console.log(iterativeFibonacci(6)) --> 8
+
+This iterative solution has a linear time complexity and its better than the recursive solution
