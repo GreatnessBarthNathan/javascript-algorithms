@@ -45,3 +45,9 @@ console.log(recursiveBinarySearch([-5, 2, 4, 6, 10], 10)) --> 4
 console.log(recursiveBinarySearch([-5, 2, 4, 6, 10], 6)) --> 3
 console.log(recursiveBinarySearch([-5, 2, 4, 6, 10], 20)) --> -1
 ```
+
+### The Big-O of our algorithm
+
+Since the input size reduce by half everytime the function calls itself the Big-O of our algorithm is 'Logarithmic'
+
+Big-O = O(logn)
