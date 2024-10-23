@@ -53,9 +53,9 @@ function binarySearch (arr, t) {
 }
 
 
-console.log(binarySearch([4, 5, 7, 8, 10, 15], 10))
-console.log(binarySearch([4, 5, 7, 8, 10, 15], 5))
-console.log(binarySearch([4, 5, 7, 8, 10, 15], 20))
+console.log(binarySearch([4, 5, 7, 8, 10, 15], 10)) --> 4
+console.log(binarySearch([4, 5, 7, 8, 10, 15], 5)) --> 1
+console.log(binarySearch([4, 5, 7, 8, 10, 15], 20)) --> -1
 ```
 
 ### The big-O of our algorithm
