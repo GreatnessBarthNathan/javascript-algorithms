@@ -1,34 +1,43 @@
-let array = [4, 20, 2, 6, 5, 17]
-
-function insertionSort(arr) {
-  for (let count = 1; count < arr.length; count++) {
-    let numberToInsert = arr[count]
-    let leftNumberIndex = count - 1
-
-    while (leftNumberIndex >= 0 && arr[leftNumberIndex] > numberToInsert) {
-      arr[leftNumberIndex + 1] = arr[leftNumberIndex] // meaning we changed the number to insert with the item on its left because the item on the left is greater
-      leftNumberIndex-- // if the index was 0 it will now be -1
-    }
-    arr[leftNumberIndex + 1] = numberToInsert
+function quickSort(arr) {
+  if (arr.length < 2) {
+    return arr
   }
-  return arr
+
+  let left = []
+  let right = []
+  let pivot = arr[arr.length - 1]
+
+  for (let count = 0; count < arr.length - 1; count++) {
+    if (arr[count] < pivot) {
+      left.push(arr[count])
+    } else {
+      right.push(arr[count])
+    }
+  }
+
+  return [...quickSort(left), pivot, ...quickSort(right)]
 }
 
-console.log(insertionSort(array))
+let array = [-6, 20, 8, -2, 4]
+console.log(quickSort(array))
 
-// [4, 20, 2, 6, 5]
-
-function reverseInsertionSort(arr) {
-  for (let count = 1; count < arr.length; count++) {
-    let numberToInsert = arr[count]
-    let leftNumberIndex = count - 1
-
-    while (leftNumberIndex >= 0 && arr[leftNumberIndex] < numberToInsert) {
-      arr[leftNumberIndex + 1] = arr[leftNumberIndex]
-      leftNumberIndex--
-    }
-    arr[leftNumberIndex + 1] = numberToInsert
+function descendingQuickSort(arr) {
+  if (arr.length < 2) {
+    return arr
   }
-  return arr
+  let left = []
+  let right = []
+  let pivot = arr[arr.length - 1]
+
+  for (let count = 0; count < arr.length - 1; count++) {
+    if (arr[count] < pivot) {
+      right.push(arr[count])
+    } else {
+      left.push(arr[count])
+    }
+  }
+
+  return [...descendingQuickSort(left), pivot, ...descendingQuickSort(right)]
 }
-console.log(reverseInsertionSort(array))
+
+console.log(descendingQuickSort(array))
