@@ -28,23 +28,33 @@ Let's consider the same array above : [-6, 20, 8, -2, 4]
 
 original array --- [-6, 20, 8, -2, 4]
 
-sorted --- [-6], unsorted --- [20, 8, -2, 4]
+1. We compare '20' with '-6' to see if it is out of order. Since '20' is greater than '-6' we leave it as it is
 
-1. We compare '20' with the elements in the sorted array, i.e '-6' to see if it is out of order. Since '20' is greater than '-6' we place '20' to the right of '-6'
+2. Next we compare '8' with the '20'. Since '20' is greater than '8' we move '20' to the right. Then we compare '8' with '-6' and since '8' is already greater than '-6' it remains on the right of '-6'
 
-sorted --- [-6, 20], unsorted --- [8, -2, 4]
+bring out '8' [-6, 20, 20, -2, 4]
 
-2. Next we compare '8' with the elements in the sorted array, i.e '-6, 20'. We start with '20'. Since '20' is greater than '8' we move '20' to the right. Then we compare '8' with '-6' and since '8' is already greater than '-6' it remains on the right of '-6'
+put '8' back in '20' position [-6, 8, 20, -2, 4]
 
-sorted --- [-6, 8, 20], unsorted --- [-2, 4]
+3. Next we compare '-2' with '20'. Since '20' is greater than '-2' we move '20' to the right. Then we compare '-2' with '8' and since '8' is greater than '-2' we move '8' to the right of '-2'. Then we compare '-2' with '-6' and since '-2' is greater than '-6' it remains on the right of '-6'
 
-3. Next we compare '-2' with the elements in the sorted array, i.e '-6, 8, 20'. We start with '20'. Since '20' is greater than '-2' we move '20' to the right. Then we compare '-2' with '8' and since '8' is greater than '-2' we move '8' to the right of '2'. Then we compare '-2' with '-6' and since '-2' is greater than '-6' it remains on the right of '-6'
+bring out '-2' [-6, 8, 20, 20, 4]
 
-sorted --- [-6, -2, 8, 20], unsorted --- [4]
+put '-2' back in '20' position [-6, 8, -2, 20, 4]
 
-2. Next we compare '4' with the elements in the sorted array, i.e '-6, -2, 8, 20'. We start with '20'. Since '20' is greater than '4' we move '20' to the right. Then we compare '4' with '8' and since '8' is greater than '4' we move '8' to the right of '4'. Then we compare '4' with '-2' and since '4' is greater than '-2' it remains on the right of '-2'
+bring out '-2' again [-6, 8, 8, 20, 4]
 
-sorted --- [-6, -2, 4, 8, 20], unsorted --- []
+put '-2' back in '8' position [-6, -2, 8, 20, 4]
+
+2. Next we compare '4' with '20'. Since '20' is greater than '4' we move '20' to the right. Then we compare '4' with '8' and since '8' is greater than '4' we move '8' to the right of '4'. Then we compare '4' with '-2' and since '4' is greater than '-2' it remains on the right of '-2'
+
+bring out '4' [-6, -2, 8, 20, 20]
+
+put '4' back in '20' position [-6, -2, 8, 4, 20]
+
+bring out '4' again [-6, -2, 8, 8, 20]
+
+put '4' back in '8' position [-6, -2, 4, 8, 20]
 
 ## Problem
 
