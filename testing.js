@@ -1,39 +1,34 @@
-function bubbleSort(arr) {
-  let swapped
-  do {
-    swapped = false
-    for (let count = 0; count < arr.length - 1; count++) {
-      if (arr[count] > arr[count + 1]) {
-        let temp = arr[count]
-        arr[count] = arr[count + 1]
-        arr[count + 1] = temp
-        swapped = true
-      }
+let array = [4, 20, 2, 6, 5, 17]
+
+function insertionSort(arr) {
+  for (let count = 1; count < arr.length; count++) {
+    let numberToInsert = arr[count]
+    let leftNumberIndex = count - 1
+
+    while (leftNumberIndex >= 0 && arr[leftNumberIndex] > numberToInsert) {
+      arr[leftNumberIndex + 1] = arr[leftNumberIndex] // meaning we changed the number to insert with the item on its left because the item on the left is greater
+      leftNumberIndex-- // if the index was 0 it will now be -1
     }
-  } while (swapped)
+    arr[leftNumberIndex + 1] = numberToInsert
+  }
   return arr
 }
 
-console.log(bubbleSort([-6, 8, -2, 4, 20]))
-console.log(bubbleSort([4, 8, 9, 2, 15]))
-console.log(bubbleSort([-1, -9, 8, 2, 1, 5]))
+console.log(insertionSort(array))
 
-function bubbleSortDescending(arr) {
-  let swapped
-  do {
-    swapped = false
-    for (let count = 0; count < arr.length; count++) {
-      if (arr[count] < arr[count + 1]) {
-        let temp = arr[count]
-        arr[count] = arr[count + 1]
-        arr[count + 1] = temp
-        swapped = true
-      }
+// [4, 20, 2, 6, 5]
+
+function reverseInsertionSort(arr) {
+  for (let count = 1; count < arr.length; count++) {
+    let numberToInsert = arr[count]
+    let leftNumberIndex = count - 1
+
+    while (leftNumberIndex >= 0 && arr[leftNumberIndex] < numberToInsert) {
+      arr[leftNumberIndex + 1] = arr[leftNumberIndex]
+      leftNumberIndex--
     }
-  } while (swapped)
+    arr[leftNumberIndex + 1] = numberToInsert
+  }
   return arr
 }
-
-console.log(bubbleSortDescending([-6, 8, -2, 4, 20]))
-console.log(bubbleSortDescending([4, 8, 9, 2, 15]))
-console.log(bubbleSortDescending([-1, -9, 8, 2, 1, 5]))
+console.log(reverseInsertionSort(array))
