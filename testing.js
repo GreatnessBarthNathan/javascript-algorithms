@@ -1,28 +1,16 @@
-function mergeSort(arr) {
-  if (arr.length < 2) {
-    return arr
-  }
+function cartesianProduct(arrA, arrB) {
+  let newArray = []
 
-  let mid = Math.floor(arr.length / 2)
-  let leftArray = arr.slice(0, mid)
-  let rightArray = arr.slice(mid)
-
-  return merge(mergeSort(leftArray), mergeSort(rightArray))
-}
-
-function merge(leftArray, rightArray) {
-  let tempArray = []
-
-  while (leftArray.length > 0 && rightArray.length > 0) {
-    if (leftArray[0] <= rightArray[0]) {
-      tempArray.push(leftArray.shift())
-    } else {
-      tempArray.push(rightArray.shift())
+  for (let i = 0; i < arrA.length; i++) {
+    for (let j = 0; j < arrB.length; j++) {
+      newArray.push([arrA[i], arrB[j]])
     }
   }
 
-  return [...tempArray, ...leftArray, ...rightArray]
+  return newArray
 }
-const array = [2, 4, 3, 8, 7, -5, 11]
+const C = [1, 2]
 
-console.log(mergeSort(array))
+const D = [3, 4, 5]
+
+console.log(cartesianProduct(C, D))
