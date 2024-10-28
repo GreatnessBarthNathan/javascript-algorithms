@@ -153,3 +153,5 @@ console.log(mergeSort(array)) --> [-5, 2, 3, 4, 7, 8, 11]
 So our solution is a combination of the two
 
 Big-O = O(nlogn)
+
+And this is one of the best time complexity to get while sorting
