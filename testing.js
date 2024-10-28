@@ -1,16 +1,30 @@
-function cartesianProduct(arrA, arrB) {
-  let newArray = []
-
-  for (let i = 0; i < arrA.length; i++) {
-    for (let j = 0; j < arrB.length; j++) {
-      newArray.push([arrA[i], arrB[j]])
-    }
+function climbingStaircase(n) {
+  if (n < 1) {
+    return 0
   }
-
-  return newArray
+  if (n === 1) {
+    return 1
+  }
+  if (n === 2) {
+    return 2
+  }
+  return climbingStaircase(n - 1) + climbingStaircase(n - 2)
 }
-const C = [1, 2]
 
-const D = [3, 4, 5]
+console.log(climbingStaircase(1))
+console.log(climbingStaircase(2))
+console.log(climbingStaircase(3))
+console.log(climbingStaircase(4))
+console.log(climbingStaircase(5))
 
-console.log(cartesianProduct(C, D))
+// function climbingStaircase(n) {
+//   const noOfWays = [1, 2]
+
+//   for (let i = 2; i <= n; i++) {
+//     noOfWays[i] = noOfWays[i - 1] + noOfWays[i - 2]
+//   }
+
+//   return noOfWays[n - 1]
+// }
+
+// console.log(climbingStaircase(6))
