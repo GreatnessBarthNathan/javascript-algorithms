@@ -107,3 +107,5 @@ Big-O = O(nlogn)
 We have a for loop --> n
 
 Then we recursively decrease the input by half with each iteration --> logn
+
+- It is very unlikely you will have to sort an already sorted array. So even though the worst case is quadratic, the average case is what matters with this algorithm

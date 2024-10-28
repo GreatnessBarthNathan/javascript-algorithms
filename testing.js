@@ -1,43 +1,28 @@
-function quickSort(arr) {
+function mergeSort(arr) {
   if (arr.length < 2) {
     return arr
   }
 
-  let left = []
-  let right = []
-  let pivot = arr[arr.length - 1]
+  let mid = Math.floor(arr.length / 2)
+  let leftArray = arr.slice(0, mid)
+  let rightArray = arr.slice(mid)
 
-  for (let count = 0; count < arr.length - 1; count++) {
-    if (arr[count] < pivot) {
-      left.push(arr[count])
+  return merge(mergeSort(leftArray), mergeSort(rightArray))
+}
+
+function merge(leftArray, rightArray) {
+  let tempArray = []
+
+  while (leftArray.length > 0 && rightArray.length > 0) {
+    if (leftArray[0] <= rightArray[0]) {
+      tempArray.push(leftArray.shift())
     } else {
-      right.push(arr[count])
+      tempArray.push(rightArray.shift())
     }
   }
 
-  return [...quickSort(left), pivot, ...quickSort(right)]
+  return [...tempArray, ...leftArray, ...rightArray]
 }
+const array = [2, 4, 3, 8, 7, -5, 11]
 
-let array = [-6, 20, 8, -2, 4]
-console.log(quickSort(array))
-
-function descendingQuickSort(arr) {
-  if (arr.length < 2) {
-    return arr
-  }
-  let left = []
-  let right = []
-  let pivot = arr[arr.length - 1]
-
-  for (let count = 0; count < arr.length - 1; count++) {
-    if (arr[count] < pivot) {
-      right.push(arr[count])
-    } else {
-      left.push(arr[count])
-    }
-  }
-
-  return [...descendingQuickSort(left), pivot, ...descendingQuickSort(right)]
-}
-
-console.log(descendingQuickSort(array))
+console.log(mergeSort(array))
