@@ -10,7 +10,7 @@ If you hav an array of integers: const arr = [-6, 20, 8, -2, 4]
 
 Passing the array into a merge sort function should return [-6, -2, 4, 8, 20]
 
-## The Idea Behind Quick Sort
+## The Idea Behind Merge Sort
 
 - Divide the array into sub arrays, each containing only one element (An array with one element is considered sorted)
 
