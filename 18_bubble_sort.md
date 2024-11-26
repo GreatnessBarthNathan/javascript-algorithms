@@ -86,7 +86,7 @@ function bubbleSortDescending(arr) {
   let swapped
   do {
     swapped = false
-    for (let count = 0; count < arr.length; count++) {
+    for (let count = 0; count < arr.length - 1; count++) {
       if (arr[count] < arr[count + 1]) {
         let temp = arr[count]
         arr[count] = arr[count + 1]
