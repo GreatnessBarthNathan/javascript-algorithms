@@ -1,19 +1,16 @@
-function bubbleSort(arr) {
-  let swapped
-  do {
-    swapped = false
-    for (let i = 0; i < arr.length - 1; i++) {
-      if (arr[i] > arr[i + 1]) {
-        let prev = arr[i]
-        arr[i] = arr[i + 1]
-        arr[i + 1] = prev
-        swapped = true
-      }
+function insertionSort(arr) {
+  for (let i = 1; i < arr.length; i++) {
+    let prevIndex = i - 1
+    let numberToInsert = arr[i]
+    while (prevIndex >= 0 && arr[prevIndex] > numberToInsert) {
+      arr[prevIndex + 1] = arr[prevIndex]
+      prevIndex--
     }
-  } while (swapped)
+    arr[prevIndex + 1] = numberToInsert
+  }
   return arr
 }
 
 const array = [20, 7, 10, 4, 15, 9, 3, 22]
 
-console.log(bubbleSort(array))
+console.log(insertionSort(array))
